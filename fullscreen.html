@@ -44,17 +44,17 @@
                 <div class="icon-background button-class" onclick="messengerClick()">
                     <i class="fa-brands fa-facebook-messenger fa-2xl" style="color: #ffffff;"></i>
                 </div>
-
+    
                 <div class="icon-background button-class" onclick="notificationClick()">
                     <i class="fa-solid fa-bell fa-2xl" style="color: #ffffff;"></i>
                 </div>
-
-                <div class="icon-background button-class" onclick="userClick()">
-                    <i class="fa-solid fa-user fa-2xl" style="color: #ffffff;"></i>
+    
+                <div class="icon-background-unclickable">
+                    <i class="fa-solid fa-user fa-2xl" style="color: #525355;"></i>
                 </div>
-
-                <div class="icon-background button-class" onclick="settingsClick()">
-                    <i class="fa-solid fa-gear fa-2xl " style="color: #ffffff;"></i>
+    
+                <div class="icon-background-unclickable">
+                    <i class="fa-solid fa-gear fa-2xl " style="color: #525355;"></i>
                 </div>
             </div>
         </div>
@@ -213,6 +213,99 @@
 
 
     <!--FUNCTION STUFF---------------------------------------------------------------------------------------------------------------------------->
+    <div id="overlayNotif" class="overlay" style="visibility: hidden;">
+        <div class = "notifPanel">
+            <div class = "messenger-title">
+                <div style="display: flex; flex-direction: row; align-items:start ; justify-content: left;">
+                    <div class="x-background button-class" style="left: 0; margin-left: 0.5vw; margin-top: 0.5vw; margin-right: 1vw; " onclick="xPanelClickNotif()">
+                        <i class="fa-solid fa-xmark fa-xl" style="color: #ffffff;"></i>
+                    </div>
+                    <p style=" margin: 0; font-weight: bold !important; font-size: 1.5vw; color: white; margin-top: 0.4vw;">Notifications</p>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: row; margin-top: -0.5vw;">
+                <div class = "underbuttons" style="margin-left: 1vw; display: flex; align-items: center; justify-content: center;">
+                    <p style="margin: 0; color: #5489c2; font-weight: bold;">All</p>
+                </div>
+
+                <div class = "underbuttons2" style="margin-left: 0.3vw; display: flex; align-items: center; justify-content: center;">
+                    <p style="margin: 0; color: white; font-weight: bold;">Unread</p>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+                <p style="margin: 0; margin-left: 1vw; font-size: 1vw; margin-top: 0.5vw; margin-bottom: 0.5vw; color: white; font-weight: bold;">New</p>
+                <p style="margin: 0; margin-left: 12.5vw; font-size: 0.8vw; margin-top: 0.5vw; margin-bottom: 0.5vw; color: #727274; user-select: none;">See More</p>
+            </div>
+
+            <div class="friends" style="color:white; margin-left: 1vw !important;">
+                <img src="Images\Tommy.webp" alt="User Image" class="user-image" style="margin-right: 0.4vw !important;height: 2.3vw; width: 2.3vw;">
+                <div class="page-text">
+                    <div style="display: flex; flex-direction: row;">
+                        <p style="font-size: 0.9vw; margin: 0; margin-bottom: 1vw; font-weight: bold;">Tommy Accepted your friend request</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="friends" style="color:white; margin-left: 1vw !important;">
+                <img src="Images\Chuckie.webp" alt="User Image" class="user-image" style="margin-right: 0.4vw !important;height: 2.3vw; width: 2.3vw;">
+                <div class="page-text">
+                    <div style="display: flex; flex-direction: row;">
+                        <p style="font-size: 0.9vw; margin: 0; margin-bottom: 1vw; font-weight: bold;">Chuckie sent you a friend request</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="friends" style="color:white; margin-left: 1vw !important;">
+                <img src="Images\Phil.jpg" alt="User Image" class="user-image" style="margin-right: 0.4vw !important;height: 2.3vw; width: 2.3vw;">
+                <div class="page-text">
+                    <div style="display: flex; flex-direction: row;">
+                        <p style="font-size: 0.9vw; margin: 0; margin-bottom: 1vw; font-weight: bold;">Phil invited you to follow Lil</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="friends" style="color:white; margin-left: 1vw !important;">
+                <img src="Images\Angelica.webp" alt="User Image" class="user-image" style="margin-right: 0.4vw !important;height: 2.3vw; width: 2.3vw;">
+                <div class="page-text">
+                    <div style="display: flex; flex-direction: row;">
+                        <p style="font-size: 0.9vw; margin: 0; margin-bottom: 1vw; font-weight: bold;">Angelica commented on your page</p>
+                    </div>
+                </div>
+            </div>
+
+            <p style="margin: 0; margin-left: 1vw; font-size: 1vw; margin-top: 0.5vw; margin-bottom: 0.5vw; color: white; font-weight: bold;">Earlier</p>
+        
+            <div class="friends" style="color:white; margin-left: 1vw !important;">
+                <img src="Images\Susie.webp" alt="User Image" class="user-image" style="margin-right: 0.4vw !important;height: 2.3vw; width: 2.3vw;">
+                <div class="page-text">
+                    <div style="display: flex; flex-direction: row;">
+                        <p style="font-size: 0.9vw; margin: 0; margin-bottom: 1vw; font-weight: bold;">Susie liked your comment</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="friends" style="color:white; margin-left: 1vw !important;">
+                <img src="Images\Dil.webp" alt="User Image" class="user-image" style="margin-right: 0.4vw !important;height: 2.3vw; width: 2.3vw;">
+                <div class="page-text">
+                    <div style="display: flex; flex-direction: row;">
+                        <p style="font-size: 0.9vw; margin: 0; margin-bottom: 1vw; font-weight: bold;">Dil shared your post</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="friends" style="color:white; margin-left: 1vw !important;">
+                <img src="Images\Kimi.webp" alt="User Image" class="user-image" style="margin-right: 0.4vw !important;height: 2.3vw; width: 2.3vw;">
+                <div class="page-text">
+                    <div style="display: flex; flex-direction: row;">
+                        <p style="font-size: 0.9vw; margin: 0; margin-bottom: 1vw; font-weight: bold;">Kimi accepted your friend request</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="overlayContent2" class="overlay" style="visibility: hidden;">
         <div class = "content-filter-panel2">
             <div class = "content-title">
