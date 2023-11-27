@@ -15,62 +15,57 @@
 	<div class="header">
         <div class="left-side">
             <div>
-                <button id="facebookLogoButton" onclick="homeClick()">
+                <button id="videofacebookLogoButton" onclick="homeClick()">
                     <i class="fa-brands fa-facebook fa-2xl" style="color: #0866ff;"></i>
                 </button>
             </div>
 
             <div class="search-box">
-                <button class="btn-search"><i class="fas fa-search"></i></button>
+                <button class="btn-search"><i class="fas fa-search" style="color: #525355;"></i></button>
                 </div>
-
-            
         </div>
 
-        <div class="center-side">
-            <div class="center-buttons button-class" onclick="marketplaceClick()">
-                <i class="fa-solid fa-store fa-xl" style="color: #ffffff;"></i>
-                <p style="font-size: 24px !important; margin-left: 10px;">Marketplace</p>
-            </div>
-
-            <div class="vertical-line"></div>
-
+        <div class="center-side" style="margin-left: 5vw;">
+            
             <div class="center-buttons button-class underline" onclick="videoClick()">
-                <i class="fa-solid fa-video fa-2xl" style="color: #0866ff;"></i>
-                <p style="color: #0866ff; font-size: 24px; margin-left: 10px;">Video</p>
+                <i class="fa-solid fa-video fa-2xl" style="color: #0866ff; font-size: 30px;"></i>
+                <p style="color: #0866ff; font-size: 22px; margin: 10px;">Video</p>
             </div>
 
             <div class="vertical-line"></div>
 
             <div class="center-buttons button-class" onclick="homeClick()">
-                <i class="fa-solid fa-house fa-2xl" style="color: #ffffff;"></i>
-                <p style="font-size: 24px; margin-left: 10px;">Home</p>
+                <i class="fa-solid fa-house fa-2xl" style="color: #ffffff; font-size: 30px;"></i>
+                <p style="font-size: 22px; margin: 10px;">Home</p>
             </div>
 
             <div class="vertical-line"></div>
 
             <div class="center-buttons button-class" onclick="showFloatingPanel()">
-                <i class="fa-solid fa-circle-plus fa-2xl" style="color: #ffffff;"></i>
-                <p style="font-size: 24px; margin-left: 10px;">Create</p>
+                <i class="fa-solid fa-circle-plus fa-2xl" style="color: #ffffff; font-size: 30px;"></i>
+                <p style="font-size: 22px; margin: 10px;">Create</p>
             </div>
         </div>
+    
 
         <div class="right-side">
-            <div class="icon-background button-class" onclick="settingsClick()">
-                <i class="fa-solid fa-gear fa-2xl " style="color: #ffffff;"></i>
-            </div>
-
-            <div class="icon-background button-class" onclick="userClick()">
-                <i class="fa-solid fa-user fa-2xl" style="color: #ffffff;"></i>
-            </div>
-
-            <div class="icon-background button-class" onclick="notificationClick()">
-                <i class="fa-solid fa-bell fa-2xl" style="color: #ffffff;"></i>
-            </div>
-
+        
             <div class="icon-background button-class" onclick="messengerClick()">
                 <i class="fa-brands fa-facebook-messenger fa-2xl" style="color: #ffffff;"></i>
             </div>
+            <div class="icon-background button-class" onclick="notificationClick()">
+                <i class="fa-solid fa-bell fa-2xl" style="color: #ffffff;"></i>
+            </div>
+            
+            <div class="icon-background-unclickable">
+                <i class="fa-solid fa-user fa-2xl" style="color: #525355;"></i>
+            </div>
+
+            <div class="icon-background-unclickable">
+                <i class="fa-solid fa-gear fa-2xl " style="color: #525355;"></i>
+            </div>
+
+            
         </div>
     </div>
 	
@@ -78,9 +73,9 @@
          
         <div id="side1" class="leftSideBar" style="visibility: visible;">
             <div style="display: flex; flex-direction: row;">
-            <h2>Video</h2>
-                <div class="icon-background button-class" onclick="settingsClick()">
-                    <i class="fa-solid fa-gear fa-2xl " style="color: #ffffff;"></i>
+            <h1 style="margin: 0;">Video</h1>
+                <div class="setting-link-buttons-unclickable">
+                    <i class="fa-solid fa-gear fa-2xl " style="color: #535255;"></i>
                 </div> 
                 </div>
             
@@ -89,63 +84,342 @@
                 <input type="text" placeholder="Search Facebook" class="Searchbar">
         </form>
 
-        <div class="link-buttons button-class" onclick="videohomeClick()">
-            <i class="fa-solid fa-house" style="color: #b2b2b2;"></i>
-            <p style="font-size: x-large; margin-left: 15px;">Home</p>
+        <div class="link-buttons-unclickable">
+            <i class="fa-solid fa-house" style="color: #525355;"></i>
+            <p style="font-size: x-large; margin-left: 15px; color: #525355;">Home</p>
         </div>
 
-        <div class="link-buttons button-class" onclick="liveClick()">
-            <i class="fa-solid fa-video" style="color: #b2b2b2;"></i>
-            <p style="font-size: x-large; margin-left: 10px;">Live</p>
+        <div class="link-buttons-unclickable">
+            <i class="fa-solid fa-video" style="color: #525355;"></i>
+            <p style="font-size: x-large; margin-left: 10px; color: #525355;">Live</p>
         </div>
 
-        <div class="link-buttons button-class" onclick="reelClick()">
-            <i class="fa-solid fa-camera-retro" style="color: #b2b2b2;"></i>
-            <p style="font-size: x-large; margin-left: 15px;">Reels</p>
+        <div class="link-buttons-unclickable">
+            <i class="fa-solid fa-camera-retro" style="color: #525355;"></i>
+            <p style="font-size: x-large; margin-left: 15px; color: #525355;">Reels</p>
         </div>
 
-        <div class="link-buttons button-class" onclick="showClick()">
-            <i class="fa-solid fa-clapperboard" style="color: #b2b2b2;"></i>
-            <p style="font-size: x-large; margin-left: 15px;">Shows</p>
+        <div class="link-buttons-unclickable">
+            <i class="fa-solid fa-clapperboard" style="color: #525355;"></i>
+            <p style="font-size: x-large; margin-left: 15px; color: #525355;">Shows</p>
         </div>
 
-        <div class="link-buttons button-class" onclick="exploreClick()">
-            <i class="fa-solid fa-rocket" style="color: #b2b2b2;"></i>
-            <p style="font-size: x-large; margin-left: 18px;">Explore</p>
+        <div class="link-buttons-unclickable">
+            <i class="fa-solid fa-rocket" style="color: #525355;"></i>
+            <p style="font-size: x-large; margin-left: 18px; color: #525355;">Explore</p>
         </div>
 		
-		<div class="link-buttons button-class" onclick="savedClick()">
-            <i class="fa-solid fa-bookmark" style="color: #b2b2b2;"></i>
-            <p style="font-size: x-large; margin-left: 18px;">Saved videos</p>
+		<div class="link-buttons-unclickable">
+            <i class="fa-solid fa-bookmark" style="color: #525355;"></i>
+            <p style="font-size: x-large; margin-left: 18px; color: #525355;">Saved videos</p>
         </div>
 </div>
       
 	   <!----Main feed --->
 		<div class="content-area" id="mainContent">
+
+
+            <!-- Floating Create Post Panel -->
+            <div class="floating-panel" id="floatingPanel">
+                <div class="create-post-panel">
+                    <div class="panel-header">
+                        <p class="create-post-header">Create post</p>
+                        <button onclick="hideFloatingPanel()" class="close-button button-class">X</button>
+                    </div>
+                    <hr class="line-divider">
+                    <div class="content">
+                        <div class="main-page">
+                            <i id="profile-picture" class="button-class fa-solid fa-circle-user"></i>
+                            <div class="user-info">
+                                <span class="username">Username</span>
+                                <button class="dropdown-btn">
+                                    <i class="fa-solid fa-earth-americas"
+                                        style="color: #8e8e8e; font-size: 0.5vw; padding-right:0.4vw;"></i>Public<i
+                                        class="fa-solid fa-play fa-rotate-90 fa-2xs"
+                                        style="margin-left:0.4vw; font-size: xx-small; color: #8e8e8e;"></i>
+                                </button>
+                            </div>
+                            <textarea id="user-text" class="post-text"
+                                placeholder="What's on your mind, User?"></textarea>
+                            <div class="actions">
+                                <button onclick="hideFloatingPanel()" class="button-class post-btn">Post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
         <section>
 
             <div class = "feedpost" id = "reference">
                 <div class = "post-information">
-
+                    <img src="Images/Miota.jpg" alt="Profile Picture" style="width: 2.6vw; height: 2.6vw; border-radius: 5vw;">
                     <div class = "feedpost-name" style="font-size: 1vw;">
-                        <p style="margin: 0;color: #FFFFFF; font-weight: bold;">Group C</p>
+                        <p style="margin: 0;color: #FFFFFF; font-weight: bold;">Miota</p>
                         <div style="display: flex; flex-direction: row;">
                             <p style="margin: 0;color: #B2B2B2 ; ">Suggested for you</p>   
-                            <p style="color: #B2B2B2; margin: 0; font-weight: bold;">-November 29 at 1:47PM</p>               
+                            <p style="color: #B2B2B2; margin: 0; font-weight: bold;">-September 24, 2022</p>
                         </div>
-                        <p style="color: #f9f9f9; margin: 0; font-weight: bold;">
-                            I Painted the Same Painting in 1 Hour, 10 Hours and 100 Hours!</p>
                     </div>
-                    <video width="320" height="240" poster="/images/w3schools_green.jpg" controls>
+                </div>
+                <p style="padding-left:0.4vw; margin-top: 1%; color: #FFFFFF; font-weight:400 !important; font-size:1vw;"> 
+                    Gneshin impact Spring Festival Special Program!
+                </p>
 
-                        <source src="Images/video.mp4" type="video/mp4">
-                        <source src="Images/video.mp4" type="video/ogg">
-                        
-                     </video>
+                <div><video class = "post-video button-class" width=100% poster="Images/Sand Dust.png" controls>
+                    <source src="Images/Sand Dust.mp4" type="video/mp4">
+                    <source src="Images/Sand Dust.mp4" type="video/ogg">
+                 </video>
+                </div>
+
+                <div style="display: flex; flex-direction: row; border-bottom: 2px solid #3A3B3C;">
+                    <div style="margin: 0.5vw; display: flex; flex-direction: column; padding-bottom: 0.4vw;">
+                        <i class="fa-solid fa-thumbs-up fa-xl" style="color: #d7d7d7; margin-left: 1.2vw; margin-bottom: 0.2vw;"></i>
+                        <i class="fa-solid fa-face-grin-squint-tears fa-xl" style="color: #ded250;"></i>
+                    </div>
+                    <p style="margin: 0; margin-top: 0.4vw; color: #B2B2B2;">Mark Zuckerberg and 112,000 others</p>
+                </div>
+                <div class = "like-comment-share-feed">
+                    <i class="fa-regular fa-thumbs-up" style="color: #727274;"></i>
+                    <p style="margin: 0; margin-left:0.4vw; font-size: 1.2vw;">Like</p>
+
+                    <i class="fa-regular fa-comment" style="margin-left: 15vw;"></i>
+                    <p style="margin: 0; margin-left:0.4vw; font-size: 1.4vw; margin-right: 15vw;">Comment</p>
+
+                    <i class="fa-regular fa-share-from-square" style="color: #727274;"></i>
+                    <p style="margin: 0; margin-left:0.4vw; font-size: 1.2vw;">Share</p>
+                </div>
+
+                <div class = "comments">
+                    <p style="margin:0.4vw; font-weight: bold !important; color: #B2B2B2; user-select: none;">View more Comments</p>
+                    <div>
+                        <div class = "comment"> 
+                            <img src="Images\Buddha.jpg" alt="Profile Picture" style="width: 2.6vw; height: 2.6vw; border-radius: 5vw;">
+                            <div class = "comment-block">
+                                <p style="margin: 0; margin-top: 0.3vw; margin-left: 0.6vw; color: #FFFFFF; font-weight: 500;" >The Buddha Himself</p>
+                                <p style="margin: 0; margin-top: 0.3vw; margin-left: 0.6vw; color: #FFFFFF; margin-top: 0.4vw;">This is so epic yet so emotional. 
+                                    Made me realize that the MHY slogan “this world is beautiful” does not mean beauty is already there, 
+                                    but it means that because of people of each nation working together to defend themselves and live out the ages, 
+                                    it has became a beautiful world. Everyone in this world, 
+                                    from archons to humans all have reasons to be remembered and cherished.</p>
+                            </div>
+                        </div>
+                        <div class = "comment-information">
+                            <p style="margin: 0; font-weight: 300;">2d</p>
+                            <p style="margin: 0; margin-right: 0.8vw; margin-left: 0.8vw; font-weight: 500;">Like</p>
+                            <p style="margin: 0; font-weight: 500;">Reply</p>
+                        </div>
+                    </div>
+
+                    <div id = "locater" class = "user-comment">
+                        <i id = "seperate-profile-picture" class="button-class fa-solid fa-circle-user"></i>
+                        <div class = "user-comment-block"> 
+                            <input id = "comment" type="text" placeholder="Write a comment..." class="user-comment-input"
+                            style="margin-left: 3vw; font-size: 1vw !important;">
+                            <i id = "send-arrow" class="fa-solid fa-play fa-lg button-class" onclick="sendComment(event)"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+                </div>
+
+                <div id="overlayMessenger" class="overlay" style="visibility: hidden;">
+                    <div class = "messenger-content">
+                        <div class = "messenger-title">
+                            <div style="display: flex; flex-direction: row; align-items:start ; justify-content: left;">
+                                <div class="x-background button-class" style="left: 0; margin-left: 0.5vw; margin-top: 0.7vw; margin-right: 1vw; " onclick="xPanelClickMessenger()">
+                                    <i class="fa-solid fa-xmark fa-xl" style="color: #ffffff;"></i>
+                                </div>
+                                <p style=" margin: 0; font-weight: bold !important; font-size: 2vw; color: white; margin-top: 0.4vw;">Chats</p>
+                            </div>
+                        </div>
+    
+                        <div class = "messenger-search" style="margin-left: 0.2vw;">
+                            <form class="search-container">
+                                <input type="text" placeholder="Search Messenger" class="Searchbar" style="font-size: 0.8vw; width: 17vw;">
+                            </form>
+                        </div>
+    
+                        <div style="color: #b2b2b2; font-size: 0.8vw; display: flex; flex-direction: row; font-weight: 400; user-select: none;">
+                            <p style="margin-left: 15.5vw;">Verified</p>
+                            <i class="fa-solid fa-caret-up fa-rotate-180" style="margin-bottom: 1vw; margin-left: 0.2vw;"></i>
+                        </div>
+    
+                        <div class = "people" style="margin-top: -0.5vw;">
+                            <div class = "person">
+                                <img src="Images\Johnny-Depp.jpg" alt="User Image" class="chat-image" style="margin-right: 0.4vw !important;">
+                                <div style="display: flex; flex-direction: column; margin-top: 0.2vw;">
+                                    <p style="margin: 0; font-weight: bold;">Johnny Depp</p>
+                                    <div style="display: flex; flex-direction: row; color: #B2B2B2; font-size: 0.8vw;">
+                                        <p style="margin: 0;">You: luv ur stuff man. - </p>
+                                        <p style="font-weight: bold; margin: 0;"> 1y</p>
+                                    </div>
+                                </div>
+    
+                                <i class="fa-solid fa-circle-check" style="margin-left:0.7vw; margin-top: 0.5vw; font-size: 1.5vw;"></i>
+                            </div>
+    
+                            <div class = "person">
+                                <img src="Images\Albert-Einstein.jpg" alt="User Image" class="chat-image" style="margin-right: 0.4vw !important;">
+                                <div style="display: flex; flex-direction: column; margin-top: 0.2vw;">
+                                    <p style="margin: 0; font-weight: bold;">Albert Einstein</p>
+                                    <div style="display: flex; flex-direction: row; color: #B2B2B2; font-size: 0.8vw;">
+                                        <p style="margin: 0;">Albert: Yo I revived wassup G! -</p>
+                                        <p style="font-weight: bold; margin: 0;"> 3y</p>
+                                    </div>
+                                </div>
+    
+                                <i class="fa-solid fa-circle-check" style="margin-left:0.7vw; margin-top: 0.5vw; font-size: 1.5vw;"></i>
+                            </div>
+    
+                            <div class = "person">
+                                <img src="Images\Hugh-Jackman.jpg" alt="User Image" class="chat-image" style="margin-right: 0.4vw !important;">
+                                <div style="display: flex; flex-direction: column; margin-top: 0.2vw;">
+                                    <p style="margin: 0; font-weight: bold;">Hugh Jackman</p>
+                                    <div style="display: flex; flex-direction: row; color: #B2B2B2; font-size: 0.8vw;">
+                                        <p style="margin: 0;">You: agreed - </p>
+                                        <p style="font-weight: bold; margin: 0;"> 4y</p>
+                                    </div>
+                                </div>
+    
+                                <i class="fa-solid fa-circle-check" style="margin-left:0.7vw; margin-top: 0.5vw; font-size: 1.5vw;"></i>
+                            </div>
+    
+                            <div class = "person">
+                                <img src="Images\bossman.jpg" alt="User Image" class="chat-image" style="margin-right: 0.4vw !important;">
+                                <div style="display: flex; flex-direction: column; margin-top: 0.2vw;">
+                                    <p style="margin: 0; font-weight: bold;">Bossman</p>
+                                    <div style="display: flex; flex-direction: row; color: #B2B2B2; font-size: 0.8vw;">
+                                        <p style="margin: 0;">Bossman: I thought you were sic... - </p>
+                                        <p style="font-weight: bold; margin: 0;"> 1h</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class = "person">
+                                <img src="Images\billy-jean.jpg" alt="User Image" class="chat-image" style="margin-right: 0.4vw !important;">
+                                <div style="display: flex; flex-direction: column; margin-top: 0.2vw;">
+                                    <p style="margin: 0; font-weight: bold;">Billy Jean</p>
+                                    <div style="display: flex; flex-direction: row; color: #B2B2B2; font-size: 0.8vw;">
+                                        <p style="margin: 0;">Billy: I told you I'm not your lover... - </p>
+                                        <p style="font-weight: bold; margin: 0;"> 3d</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class = "person">
+                                <img src="Images\Ratvinder-Grewal.jpg" alt="User Image" class="chat-image" style="margin-right: 0.4vw !important;">
+                                <div style="display: flex; flex-direction: column; margin-top: 0.2vw;">
+                                    <p style="margin: 0; font-weight: bold;">Professor</p>
+                                    <div style="display: flex; flex-direction: row; color: #B2B2B2; font-size: 0.8vw;">
+                                        <p style="margin: 0;">You: please respond to my emai... -</p>
+                                        <p style="font-weight: bold; margin: 0;"> 905y</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "messenger-end">
+                            <p>See all in Messenger</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="overlayNotif" class="overlay" style="visibility: hidden;">
+                    <div class = "notifPanel">
+                        <div class = "messenger-title">
+                            <div style="display: flex; flex-direction: row; align-items:start ; justify-content: left;">
+                                <div class="x-background button-class" style="left: 0; margin-left: 0.5vw; margin-top: 0.5vw; margin-right: 1vw; " onclick="xPanelClickNotif()">
+                                    <i class="fa-solid fa-xmark fa-xl" style="color: #ffffff;"></i>
+                                </div>
+                                <p style=" margin: 0; font-weight: bold !important; font-size: 1.5vw; color: white; margin-top: 0.4vw;">Notifications</p>
+                            </div>
+                        </div>
+    
+                        <div style="display: flex; flex-direction: row; margin-top: -0.5vw;">
+                            <div class = "underbuttons" style="margin-left: 1vw; display: flex; align-items: center; justify-content: center;">
+                                <p style="margin: 0; color: #5489c2; font-weight: bold;">All</p>
+                            </div>
+        
+                            <div class = "underbuttons2" style="margin-left: 0.3vw; display: flex; align-items: center; justify-content: center;">
+                                <p style="margin: 0; color: white; font-weight: bold;">Unread</p>
+                            </div>
+                        </div>
+    
+                        <div style="display: flex; flex-direction: row;">
+                            <p style="margin: 0; margin-left: 1vw; font-size: 1vw; margin-top: 0.5vw; margin-bottom: 0.5vw; color: white; font-weight: bold;">New</p>
+                            <p style="margin: 0; margin-left: 12.5vw; font-size: 0.8vw; margin-top: 0.5vw; margin-bottom: 0.5vw; color: #727274; user-select: none;">See More</p>
+                        </div>
+    
+                        <div class="friends" style="color:white; margin-left: 1vw !important;">
+                            <img src="Images\Tommy.webp" alt="User Image" class="user-image" style="margin-right: 0.4vw !important;height: 2.3vw; width: 2.3vw;">
+                            <div class="page-text">
+                                <div style="display: flex; flex-direction: row;">
+                                    <p style="font-size: 0.9vw; margin: 0; margin-bottom: 1vw; font-weight: bold;">Tommy Accepted your friend request</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="friends" style="color:white; margin-left: 1vw !important;">
+                            <img src="Images\Chuckie.webp" alt="User Image" class="user-image" style="margin-right: 0.4vw !important;height: 2.3vw; width: 2.3vw;">
+                            <div class="page-text">
+                                <div style="display: flex; flex-direction: row;">
+                                    <p style="font-size: 0.9vw; margin: 0; margin-bottom: 1vw; font-weight: bold;">Chuckie sent you a friend request</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="friends" style="color:white; margin-left: 1vw !important;">
+                            <img src="Images\Phil.jpg" alt="User Image" class="user-image" style="margin-right: 0.4vw !important;height: 2.3vw; width: 2.3vw;">
+                            <div class="page-text">
+                                <div style="display: flex; flex-direction: row;">
+                                    <p style="font-size: 0.9vw; margin: 0; margin-bottom: 1vw; font-weight: bold;">Phil invited you to follow Lil</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="friends" style="color:white; margin-left: 1vw !important;">
+                            <img src="Images\Angelica.webp" alt="User Image" class="user-image" style="margin-right: 0.4vw !important;height: 2.3vw; width: 2.3vw;">
+                            <div class="page-text">
+                                <div style="display: flex; flex-direction: row;">
+                                    <p style="font-size: 0.9vw; margin: 0; margin-bottom: 1vw; font-weight: bold;">Angelica commented on your page</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <p style="margin: 0; margin-left: 1vw; font-size: 1vw; margin-top: 0.5vw; margin-bottom: 0.5vw; color: white; font-weight: bold;">Earlier</p>
                     
+                        <div class="friends" style="color:white; margin-left: 1vw !important;">
+                            <img src="Images\Susie.webp" alt="User Image" class="user-image" style="margin-right: 0.4vw !important;height: 2.3vw; width: 2.3vw;">
+                            <div class="page-text">
+                                <div style="display: flex; flex-direction: row;">
+                                    <p style="font-size: 0.9vw; margin: 0; margin-bottom: 1vw; font-weight: bold;">Susie liked your comment</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="friends" style="color:white; margin-left: 1vw !important;">
+                            <img src="Images\Dil.webp" alt="User Image" class="user-image" style="margin-right: 0.4vw !important;height: 2.3vw; width: 2.3vw;">
+                            <div class="page-text">
+                                <div style="display: flex; flex-direction: row;">
+                                    <p style="font-size: 0.9vw; margin: 0; margin-bottom: 1vw; font-weight: bold;">Dil shared your post</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="friends" style="color:white; margin-left: 1vw !important;">
+                            <img src="Images\Kimi.webp" alt="User Image" class="user-image" style="margin-right: 0.4vw !important;height: 2.3vw; width: 2.3vw;">
+                            <div class="page-text">
+                                <div style="display: flex; flex-direction: row;">
+                                    <p style="font-size: 0.9vw; margin: 0; margin-bottom: 1vw; font-weight: bold;">Kimi accepted your friend request</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
- 
             </div>
 
 <!--Keep this as the last thing before body ends-->

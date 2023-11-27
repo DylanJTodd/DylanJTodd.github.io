@@ -43,6 +43,7 @@ body {
     justify-content: left;
 }
 
+
 .center-side {
     box-sizing: border-box;
     display: flex;
@@ -221,26 +222,40 @@ body {
     margin: 0;
 }
 
+#videofacebookLogoButton{
+    cursor: pointer;
+    margin-left: 0.3vw;
+    background-color: transparent;
+    height: 2.4vh;
+    width: 2.4vw;
+    padding: 0;
+    border-radius: 0.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25vw;
+    border: none;
+}
+
 .search-box{
     width: fit-content;
     height: fit-content;
-    position: relative;
-    margin-left: 15px;
+    position:absolute;
+    margin-left: 3vw;
 }
 
 .btn-search{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-style: none;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     outline: none;
     cursor: pointer;
     border-radius: 50%;
-    
     right: 0px;
     color:#ffffff ;
-    background-color:transparent;
+    background-color:#656668;
     pointer-events: painted;  
 }
 
@@ -360,7 +375,7 @@ body {
 }
 
 .link-buttons-unclickable {
-    height: 3vw;
+    height: 2.8vw;
     display: flex;
     padding-left: 0.2vw;
     justify-content: left;
@@ -370,6 +385,14 @@ body {
 
 .link-buttons:hover {
     background-color: #434445;
+}
+
+.setting-link-buttons-unclickable{
+    display: flex;
+    padding-left: 7.5vw;
+    justify-content: left;
+    align-items: center;
+    font-size: 0.7vw;
 }
 
 .rotate-class {
@@ -866,6 +889,7 @@ label {
     object-position: center;
 }
 
+
 .like-comment-share-feed{
     display: flex;
     font-size: 1vw !important;
@@ -1180,7 +1204,7 @@ label {
 #dynamic{
     height: calc(100vh - 2.55vw);
     width: auto;
-    cursor: pointer;
+    user-select: none;
 }
 
 #dynamic2{
