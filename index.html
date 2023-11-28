@@ -71,6 +71,10 @@
 
     <!--Left Side Panel v ----------------------------------------------------------------------------------------------------->
 
+    <div  id = "secrecy" style="position: absolute; background-color: #242526; width: 3vw; height: 100vh; border-right: 2px solid #3A3B3C; visibility: hidden;">
+        <i onclick="openSide()" id = "side-col" class="fa-solid fa-caret-up fa-rotate-270 button-class rotate-class" style="margin-top: 7.5vw; margin-left: 2vw; font-size: 1.4vw !important;" onclick="collapseSide()"></i>
+    </div>
+
     <div id="side1" class="leftSideBar" style="visibility: visible;">
         <div class="tab-switch fixed-child">
             <div class="tab-buttons button-class underline" onclick="linksClick()">
@@ -84,6 +88,7 @@
         <div class="link-buttons-unclickable">
             <i class="fa-solid fa-user" style="color: #525355; padding-left: 0.4vw;"></i>
             <p style="font-size: 1.3vw; margin-left: 0.9vw; color: #525355;">User</p>
+            <i id = "side-col" class="fa-solid fa-caret-up fa-rotate-270 button-class rotate-class" style="margin-left: 8.5vw; font-size: 1.2vw !important;" onclick="collapseSide()"></i>
         </div>
 
         <div class="link-buttons-unclickable">
@@ -467,7 +472,7 @@
     <!----Main feed --->
 
     <div class="content-area" id="mainContent">
-            <div class="create-post">
+            <div class="create-post" id = "1234">
                 <i id="profile-picture" class=" button-class fa-solid fa-circle-user"></i>
                 <div class="create-post-content">
                     <button id="postContent" class="text-area-button" onclick="showFloatingPanel()"
@@ -543,7 +548,7 @@
             </div>
             <div class="dim-overlay"></div>
 
-            <div class = "filter-content" onclick="filterContent()">
+            <div class = "filter-content" id = "abcdabc" onclick="filterContent()">
                 <p style="margin: 0; padding: 0;">Filter Content</p>
                 <i class="fa-solid fa-filter" style="margin-left: 0.5vw; margin-top: 0.2vw;"></i>
             </div>

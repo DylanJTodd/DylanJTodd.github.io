@@ -42,6 +42,65 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+var oneOrTwo = false;
+
+function collapseSide(){
+    document.getElementById('secrecy').style.visibility = "visible"
+    document.getElementById('side-col').style.color = "#0866FF";
+    var feed = document.getElementById('mainContent');
+    var posts = document.getElementsByClassName('feedpost');
+
+    feed.style.width = "90vw";
+    feed.style.left = "7vw";
+
+    for (var i = 0; i < posts.length; i++) {
+        posts[i].style.width = '92vw'; 
+    }
+
+    document.getElementById('abcdabc').style.marginRight = "-12vw";
+    document.getElementById('1234').style.width = "92vw";
+    document.getElementById('postContent').style.width = "85vw";
+
+    var one = document.getElementById('side1');
+    var two = document.getElementById('side2');
+
+    if (one.style.visibility == "visible"){
+        oneOrTwo = true;
+        one.style.visibility = "hidden";
+    }
+    else{
+        oneOrTwo = false;
+        two.style.visibility = "hidden";
+    }
+}
+
+function openSide(){
+    document.getElementById('secrecy').style.visibility = "hidden"
+    document.getElementById('side-col').style.color = "#fff";
+    var feed = document.getElementById('mainContent');
+    var posts = document.getElementsByClassName('feedpost');
+
+    feed.style.width = "84vw";
+    feed.style.left = "15.6vw";
+
+    for (var i = 0; i < posts.length; i++) {
+        posts[i].style.width = '80vw'; 
+    }
+
+    document.getElementById('abcdabc').style.marginRight = "0";
+    document.getElementById('1234').style.width = "80vw";
+    document.getElementById('postContent').style.width = "73vw";
+
+    var one = document.getElementById('side1');
+    var two = document.getElementById('side2');
+
+    if (oneOrTwo == false){
+        two.style.visibility = "visible"
+    }
+    else{
+        one.style.visibility = "visible"
+    }
+}
 
 function sendComment(event) {
     var username = "Username";
