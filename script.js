@@ -49,6 +49,8 @@ function collapseSide(){
     document.getElementById('side-col').style.color = "#0866FF";
     var feed = document.getElementById('mainContent');
     var posts = document.getElementsByClassName('feedpost');
+    
+    document.getElementById('idkanymore').style.visibility = "hidden";
 
     feed.style.width = "90vw";
     feed.style.left = "7vw";
@@ -79,6 +81,8 @@ function openSide(){
     document.getElementById('side-col').style.color = "#fff";
     var feed = document.getElementById('mainContent');
     var posts = document.getElementsByClassName('feedpost');
+
+    document.getElementById('idkanymore').style.visibility = "visible";
 
     feed.style.width = "84vw";
     feed.style.left = "15.6vw";

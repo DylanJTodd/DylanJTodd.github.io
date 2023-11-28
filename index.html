@@ -72,7 +72,11 @@
     <!--Left Side Panel v ----------------------------------------------------------------------------------------------------->
 
     <div  id = "secrecy" style="position: absolute; background-color: #242526; width: 3vw; height: 100vh; border-right: 2px solid #3A3B3C; visibility: hidden;">
-        <i onclick="openSide()" id = "side-col" class="fa-solid fa-caret-up fa-rotate-270 button-class rotate-class" style="margin-top: 7.5vw; margin-left: 2vw; font-size: 1.4vw !important;" onclick="collapseSide()"></i>
+        <i onclick="openSide()" id = "side-col" class="fa-solid fa-caret-up fa-rotate-270 button-class" style="margin-top: 7.5vw; margin-left: 2vw; font-size: 1.5vw !important;"></i>
+    </div>
+
+    <div id ="idkanymore" style="position: absolute; margin-top: 7vw; margin-left: 16vw; z-index: 100; color: #FFFFFF;">
+        <i id = "side-col" class="fa-solid fa-caret-up fa-rotate-270 button-class" style="font-size: 1.5vw;" onclick="collapseSide()"></i>
     </div>
 
     <div id="side1" class="leftSideBar" style="visibility: visible;">
@@ -88,7 +92,6 @@
         <div class="link-buttons-unclickable">
             <i class="fa-solid fa-user" style="color: #525355; padding-left: 0.4vw;"></i>
             <p style="font-size: 1.3vw; margin-left: 0.9vw; color: #525355;">User</p>
-            <i id = "side-col" class="fa-solid fa-caret-up fa-rotate-270 button-class rotate-class" style="margin-left: 8.5vw; font-size: 1.2vw !important;" onclick="collapseSide()"></i>
         </div>
 
         <div class="link-buttons-unclickable">
@@ -187,10 +190,10 @@
                 <p style="color:#0866FF;">Discovery Hub</p>
             </div>
         </div>
-        
+
         <div id="nonSortable" class="discoveryPanels button-class link-buttons" onclick="editPanelsClick()">
             <i class="fa-solid fa-pen-to-square" style=" margin-left: 0.5vw; color: #ffffff;"></i>
-            <p style="color: #FFFFFF; font-size: 1.2vw;  margin-left:0.4vw;">Edit Panels</p>
+            <p style="color: #FFFFFF; font-size: 1.2vw;  margin-left:0.4vw; white-space: nowrap; ">Edit Panels</p>
         </div>
 
         <div id="friendsOnline" class="discoveryPanels">
