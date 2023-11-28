@@ -467,8 +467,6 @@
     <!----Main feed --->
 
     <div class="content-area" id="mainContent">
-
-        <!----------------------------------------CREATE POST STUFF (NEEDS TO BE FIXED)---------------------------------------->
             <div class="create-post">
                 <i id="profile-picture" class=" button-class fa-solid fa-circle-user"></i>
                 <div class="create-post-content">
@@ -505,19 +503,31 @@
             <!-- Floating Create Post Panel -->
             <div class="floating-panel" id="floatingPanel">
                 <div class="create-post-panel">
-                    <div class="panel-header">
-                        <p class="create-post-header">Create post</p>
-                        <button onclick="hideFloatingPanel()" class="close-button button-class">X</button>
-                    </div>
-                    <hr class="line-divider">
-                    <div class="content">
+						<div class="audience-page">
+							<div class="panel-header">
+								<button class="back-btn close-button button-class">-&larr;</button>
+								<p class="create-post-header" style="font-size: 1.3vw;">Post Audience</p>
+							</div>
+							<hr class="line-divider">
+							<p>Who can see your post?</p>
+							<ul class="button-list" style="padding-left: 2.8vw;">
+								<li><a href="#" data-audience="Public"><button><i class="fa-solid fa-earth-americas" style="color: #ffffff; margin-left: 0.5vw;"></i> Public</button></a></li>
+								<li><a href="#" data-audience="Friends"><button><i class="fa-solid fa-user-group" style="color: #ffffff; margin-left: 0.5vw;"></i> Friends </button></a></li>
+								<li><a href="#" data-audience="Only Me"><button><i class="fa-solid fa-lock" style="color: #ffffff; margin-left: 0.5vw;"></i> Only Me</button></a></li>
+							</ul>
+						</div>
                         <div class="main-page">
+							<div class="panel-header">
+                                <button onclick="hideFloatingPanel()" class="close-button button-class" style="margin-left: -0.7vw;">X</button>
+								<p class="create-post-header">Create post</p>
+							</div>
+							<hr class="line-divider">
+							<div class="content">
                             <i id="profile-picture" class="button-class fa-solid fa-circle-user"></i>
                             <div class="user-info">
                                 <span class="username">Username</span>
                                 <button class="dropdown-btn">
-                                    <i class="fa-solid fa-earth-americas"
-                                        style="color: #8e8e8e; font-size: 0.5vw; padding-right:0.4vw;"></i>Public<i
+                                    Public<i
                                         class="fa-solid fa-play fa-rotate-90 fa-2xs"
                                         style="margin-left:0.4vw; font-size: xx-small; color: #8e8e8e;"></i>
                                 </button>
@@ -532,8 +542,6 @@
                 </div>
             </div>
             <div class="dim-overlay"></div>
-
-<!----------------------------------------CREATE POST STUFF (NEEDS TO BE FIXED)---------------------------------------->
 
             <div class = "filter-content" onclick="filterContent()">
                 <p style="margin: 0; padding: 0;">Filter Content</p>
@@ -672,6 +680,9 @@
             </div>
 
             <!--OVERLAY STUFF------------------------------------------------------------------------------------------->
+
+
+            
 
             <div id="overlayNotif" class="overlay" style="visibility: hidden;">
                 <div class = "notifPanel">

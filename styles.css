@@ -245,10 +245,10 @@ body {
 }
 
 .btn-search{
-    width: 30px;
-    height: 30px;
+    width: 1.7vw;
+    height: 1.7vw;
     border-style: none;
-    font-size: 15px;
+    font-size: 0.9vw;
     font-weight: bold;
     outline: none;
     cursor: pointer;
@@ -687,22 +687,22 @@ label {
 /*text area button */
 .text-area-button {
     appearance: none;
-    border-radius: 50px;
+    border-radius: 5vw;
     background-color: #393a3b;
     color: #b2b3b4;
     border: none;
-    width: calc(100% + 25px);
+    width: calc(100% + 1.5vw);
     cursor: pointer;
     transition: all 0.3s ease;
-    line-height: 13px;
+    line-height: 0.8vw;
     resize: none;
     overflow: hidden;
-    height: 30px;
+    height: 1.7vw;
     display: flex;
     align-items: flex-start;
-    padding: 9px;
-    margin-left: -27px;
-    margin-bottom: 13px;
+    padding: 0.5vw;
+    margin-left: -1.5vw;
+    margin-bottom: 0.7vw;
     transition: background-color 0.2s ease;
 }
 
@@ -756,7 +756,7 @@ label {
 	font-weight: 600;
 }
 
-.panel-header .close-button {
+.close-button {
     border: none;
     border-radius: 50%;
     background-color: #393a3b;
@@ -818,20 +818,20 @@ label {
     width: 105%;
     background-color: #242526;
     color: #b2b3b4;
-    font-size: 16px;
-    margin-left: -8px;
+    font-size: 1vw;
+    margin-left: -0.5vw;
     resize: none;
     overflow-y: auto;
-    height: 140px;
+    height: 9vw;
 }
 
 .post-btn {
     width: 105%;
-    border-radius: 5px;
+    border-radius: 0.3vw;
     color: #FFFFFF;
     background-color: #393a3b;
     border: none;
-    margin-left: -8px;
+    margin-left: -0.4vw;
     padding: 0.4vw 1vw;
 	margin-top: 5.5vw;
     transition: background-color 0.2s ease;
@@ -844,13 +844,56 @@ label {
 .dropdown-btn {
     display: flex;
     align-items: center;
-    border-radius: 50px;
+    border-radius: 1vw;
     background-color: #393a3b;
     color: #8e8e8e;
     border: none;
-    font-size: 10px;
+    font-size: 0.6vw;
     margin-top: 3px;
     width: 4.5vw;
+}
+
+.dropdown-btn:hover {
+	background-color: #4e4f50;
+}
+
+.back-btn {
+	margin-left: -0.8vw;
+	width: 2.3vw;
+    height: 2.3vw;
+}
+
+/*buttons*/
+.button-list {
+      list-style: none; 
+	  margin-left: -3.6vw;
+}
+
+.button-list a {
+	text-decoration: none;
+}
+
+.button-list li button {
+	width: 27vw;
+    border: none;
+    background-color: #242526;
+    cursor: pointer;
+	text-align: left;
+	padding: 1vw 0vw;
+	border-radius: 0.7vw;
+	font-weight: 600;
+	color: #FFFFFF;
+    font-size: 1.1vw;
+}
+
+.button-list li button:hover {
+	background-color: #4e4f50;
+}
+
+.audience-page p {
+	font-size: 1.1vw;
+	font-weight: 600;
+	color: #FFFFFF;
 }
 
 .feedpost {
